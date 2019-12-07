@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+movies = [
+    {titulo: "Alladin (animação)", data_lancamento: '25-11-1992'}
+]
+
+movies.each do |movie|
+    Movie.create!(movie)
+end 
+
+profissional = [
+    {Ator: "Meryl Streep"}
+    {Diretor: "Quentin Tarantino"}
+]
+
+profissionals.each do |profissional|
+    Profissional.create!(profissional)
+end
